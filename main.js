@@ -95,14 +95,8 @@
 
   /* ---------------- Header ---------------- */
   const hdr = $('#hdr');
-  let lastY = scrollY;
   const onScroll = () => {
-    const y = scrollY;
-    hdr.classList.toggle('is-solid', y > 40);
-    const menuOpen = burger.getAttribute('aria-expanded') === 'true';
-    hdr.classList.toggle('is-hidden', !menuOpen && y > innerHeight * 0.8 && y > lastY + 4);
-    if (y < lastY - 4) hdr.classList.remove('is-hidden');
-    lastY = y;
+    hdr.classList.toggle('is-solid', scrollY > 40 || burger.getAttribute('aria-expanded') === 'true');
   };
   addEventListener('scroll', onScroll, { passive: true });
 

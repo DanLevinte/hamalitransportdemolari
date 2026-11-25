@@ -62,7 +62,6 @@ ul,ol{padding:0;list-style:none}
 /* ---------- Header ---------- */
 .hdr{position:fixed;inset:0 0 auto;z-index:50;color:var(--paper);transition:background .35s,transform .45s var(--ease),border-color .35s;border-bottom:1px solid transparent}
 .hdr.is-solid{background:rgba(17,17,16,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-color:var(--line-inv)}
-.hdr.is-hidden{transform:translateY(-100%)}
 .hdr__in{height:var(--hdr);display:flex;align-items:center;gap:32px;max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
 .logo{display:flex;align-items:center;gap:12px;color:var(--signal)}
 .logo__mark{width:36px;height:36px}
